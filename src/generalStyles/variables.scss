@@ -1,0 +1,30 @@
+
+$bg-color: #FEFBF7;
+$accent-color: #789776;
+$add-color: #98958B;
+$text-color: #5B6158;
+
+$bookman-regular: 'Bookman Regular';
+$newyorker: 'NewYorkerC Regular';
+$raleway-Reg: 'Raleway Regular';
+$raleway-Bold: 'Raleway Bold';
+
+@font-face {
+    font-family: 'Bookman Regular';
+    src: url('../../public/fonts/BookMan-regular.ttf');
+}
+
+@font-face {
+    font-family: 'NewYorkerC Regular';
+    src: url('../../public/fonts/NewYorkerC-regular.ttf');
+}
+
+@font-face {
+    font-family: 'Raleway Regular';
+    src: url('../../public/fonts/Raleway-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Raleway Bold';
+    src: url('../../public/fonts/Raleway-SemiBold.ttf');
+}

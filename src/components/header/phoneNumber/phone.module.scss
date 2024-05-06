@@ -1,0 +1,11 @@
+@import '../../../generalStyles/variables.scss';
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 4px;
+    color: $text-color;
+    font-size: 15px;
+    font-family: 'Raleway Regular';
+}
