@@ -1,20 +1,20 @@
 import styles from './notation.module.scss'
 export const Notation=()=>{
     return(
-        <div>
+        <div className={styles.container}>
             <div>
-                <span>6 </span>
-                <span>
+                <span className={styles.number}>6 </span>
+                <span className={styles.text}>
                     направлений в одном абонементе
                 </span>
             </div>
             <div>
-                <span>4 </span>
-                <span>тренера с большим практическим опытом</span>
+                <span className={styles.number}>4 </span>
+                <span className={styles.text}>тренера с большим практическим опытом</span>
             </div>
             <div>
-                <span>2 </span>
-                <span>просторных зала для занятий</span>
+                <span className={styles.number}>2 </span>
+                <span className={styles.text}>просторных зала для занятий</span>
             </div>
         </div>
     )

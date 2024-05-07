@@ -1,0 +1,20 @@
+@import '../../../../generalStyles/variables.scss';
+
+.container{
+    display: grid;
+    gap: 24px;
+    margin-left: 19px;
+}
+.text{
+    max-width: 115px;
+    color: $text-color;
+    font-family: $raleway-Reg;
+    font-size: 14px;
+    font-weight: 400;
+}
+.number{
+    color: $add-accent-color;
+    font-family: $newyorker;
+    font-size: 36px;
+    font-weight: 400;
+}
