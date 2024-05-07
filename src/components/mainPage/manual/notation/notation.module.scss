@@ -4,9 +4,15 @@
     display: grid;
     gap: 24px;
     margin-left: 19px;
+    & > div {
+        display: flex;
+        align-items: center;
+    }
 }
 .text{
-    max-width: 115px;
+    max-width: 153px;
+    margin-left: 8px;
+
     color: $text-color;
     font-family: $raleway-Reg;
     font-size: 14px;
