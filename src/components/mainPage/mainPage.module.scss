@@ -1,41 +1,55 @@
 @import '../../generalStyles/variables.scss';
 
 .container{
+    border: 1px solid red;
     margin-top: 115px;
     display: grid;
-    
+    grid-template-columns: auto auto;
     grid-template-areas: 
         'h1 h1 slider slider'
         'p p slider slider'
-        'img btn slider slider'
-        'img img slider slider'
-    ;
+        'btn btn slider slider'
+        'men men slider slider';
+        
+        
 }
-.slider{
-    display: block;
-    grid: slider;
-}
+
 .h1Module{
+    max-width: 579px;
     display: block;
     grid-area: h1;
 }
 .pModule{
+    max-width: 276px;
     display: block;
     grid-area: p;
 }
+.btnModule{
+    display: flex;
+    justify-content: end;
+    margin-right: 60px;
+    grid-area: btn;
+}
+.manualModule{
+    
+    grid-area: men;
+}
 .h1{
-    // display: block;
-    // grid-area: h1;
-    // margin-top: 115px;
+    
     color: $accent-color;
     font-family: $newyorker;
     font-size: 84px;
+    font-weight: 400;
 }
 .p{
-    // display: block;
-    // grid-area: p;
+    
     margin-top: 56px;
     font-size: 16px;
     color: $text-color;
     font-family: $raleway-Reg;
+}
+.slider{
+    display: flex;
+    justify-content: end;
+    grid-area: slider;
 }

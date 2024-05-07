@@ -1,0 +1,14 @@
+@import  '../../../generalStyles/variables.scss';
+
+.container{
+    
+    width: 155px;
+    height: 155px;
+    border-radius: 50%;
+    border: 0px;
+    background-color: $accent-color;
+    color: $bg-color;
+    font-family: $raleway-Reg;
+    font-size: 15px;
+    
+}
