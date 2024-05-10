@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import styles from './slider.module.scss'
 import { Slide } from './slideFun'
-
 export const Slider=()=>{
 
     const images = [
+        
         '/assets/slider/slider-1.svg',
         '/assets/slider/slider-2.svg',
         '/assets/slider/slider-3.svg'

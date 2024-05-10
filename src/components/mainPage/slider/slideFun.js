@@ -4,7 +4,14 @@ import styles from './slider.module.scss'
 export const Slide = ({ src  }) => {
   return (
     
-    <img  src={src} alt="Slide"/>
+    <div
+      className={styles.slider}
+      style={{
+        backgroundImage: `url(${src})`
+      }}
+    >
+
+    </div>
     
   );
 };
