@@ -1,0 +1,28 @@
+@import '../../../generalStyles/variables.scss';
+@import '../../../generalStyles/mixins.scss';
+
+.container{
+    display: none;
+    list-style:outside;
+    border-radius: 5px;
+    background-color: $accent-color;
+    position: absolute; 
+    top: 35px;
+    right: 0;
+    z-index: 1;
+    & a{
+        color: $bg-color;
+        padding-left: 5px;
+        padding-right: 5px;
+        &:hover{
+            color: $text-color;
+            transition: 0.4s;
+        }
+    }
+    @include tablet{
+        display: block;
+    }
+    @include mobile{
+        display: block;
+    }
+}

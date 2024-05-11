@@ -1,5 +1,27 @@
+@import '../../generalStyles/mixins.scss';
 
 .container{
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    @include desktop{
+        justify-content: space-between;    
+    }
+    @include mobile{
+        justify-content: space-between;    
+    }
+    
+}
+
+.rightSide{
+    display: flex;
+    align-items: center;
+
+    @include tablet {
+        justify-content: flex-end;
+        
+    }
+    @include mobile {
+        justify-content: space-between; 
+    }
 }

@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import styles from './slider.module.scss'
+import { NextBtn } from '../../shared/switchBtn/nextBtn';
+import { PrevBtn } from '../../shared/switchBtn/prevBtn';
 import { Slide } from './slideFun'
 export const Slider=()=>{
 
@@ -38,8 +40,12 @@ export const Slider=()=>{
                     style={{ width: `${((currentIndex + 1) / images.length) * 100}%` }}
                     />
                 </div>
-                <img onClick={goToPrevSlide} style={{ marginRight: '8px',marginLeft: '26px' }} src="/assets/arrows/leftArrow.svg" alt="leftArrow" />
-                <img onClick={goToNextSlide} src="/assets/arrows/rightArrow.svg" alt="rightArrow" />
+                <div style={{display: 'flex'}}>
+                    <PrevBtn goToPrevSlide={goToPrevSlide}/>
+                    <NextBtn goToNextSlide={goToNextSlide}/>
+                </div>
+                
+                
             </div>            
         </div>
     )

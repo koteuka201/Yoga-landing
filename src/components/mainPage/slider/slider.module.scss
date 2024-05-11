@@ -1,13 +1,23 @@
 @import '../../../generalStyles/variables.scss';
+@import '../../../generalStyles/mixins.scss';
 
 .container{
     margin-top: 50px;
+    @include tablet{
+        margin-top: 123px;
+    }
 }
 .switchContainer{
     display: flex;
     justify-content: end;
     margin-top: 10px;
-    
+    @include tablet{
+        margin-top: 0px;
+
+    }
+    @include mobile{
+        display: none;
+    }
 }
 .progressContainer {
     
@@ -16,6 +26,7 @@
     background-color: #ddd;
     margin-top: 17px;
     position: relative;
+    
 }
 .indexContainer{
     margin-right: 19px;
@@ -40,4 +51,12 @@
     transition: 0.5s ease;
     background-size: contain;
     background-repeat: no-repeat;
+    @include tablet{
+        width: 310px;
+        height: 418px;
+    }
+    @include mobile{
+        width: 327px;
+        height: 380px;
+    }
 }

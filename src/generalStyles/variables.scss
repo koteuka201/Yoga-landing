@@ -10,6 +10,10 @@ $newyorker: 'NewYorkerC-400';
 $raleway-Reg: 'Raleway-400';
 $raleway-Bold: 'Raleway-600';
 
+$tablet-width: 768px;
+$mobile-width: 375px;
+$desktop-width:  1194px;
+
 @font-face {
     font-family: 'Bookman-400';
     src: url('../../public/fonts/BookMan-regular.ttf');

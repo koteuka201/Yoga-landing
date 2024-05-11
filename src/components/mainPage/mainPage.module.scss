@@ -1,23 +1,44 @@
 @import '../../generalStyles/variables.scss';
+@import '../../generalStyles/mixins.scss';
 
 .container{
     border: 1px solid red;
     margin-top: 115px;
     display: grid;
+    position: relative;
     grid-template-columns: auto auto;
     grid-template-areas: 
         'h1 h1 slider slider'
         'p p slider slider'
         'btn btn slider slider'
-        'men men slider slider';
+        'man man slider slider';
         
+    @include tablet{
+        margin-top: 77px;
+    }
+    @include mobile{
+        margin-top: 52px;
+        justify-content: center;
+        grid-template-areas: 
+        'h1'
+        'slider'
+        'p'
+        'man';
         
+    }
 }
 
 .h1Module{
     max-width: 579px;
-    display: block;
+    
+    // display: block;
     grid-area: h1;
+    @include tablet{
+        max-width: 397px;
+    }
+    @include mobile{
+        max-width: 339px;
+    }
 }
 .pModule{
     max-width: 276px;
@@ -29,10 +50,17 @@
     justify-content: end;
     margin-right: 60px;
     grid-area: btn;
+    @include tablet{
+        margin-right: 32px;
+    }
+    @include mobile{
+        margin-right: 0px;
+    }
 }
 .manualModule{
     
-    grid-area: men;
+    grid-area: man;
+    
 }
 .h1{
     
@@ -40,6 +68,13 @@
     font-family: $newyorker;
     font-size: 84px;
     font-weight: 400;
+    @include tablet{
+        font-size: 54px;
+    }
+    @include mobile{
+        
+        font-size: 48px;
+    }
 }
 .p{
     
@@ -47,9 +82,17 @@
     font-size: 16px;
     color: $text-color;
     font-family: $raleway-Reg;
+    @include mobile{
+        
+        margin-top: 32px;
+
+    }
 }
 .slider{
     display: flex;
     justify-content: end;
     grid-area: slider;
+    @include mobile{
+        font-size: 54px;
+    }
 }

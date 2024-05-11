@@ -1,12 +1,23 @@
 @import '../../../generalStyles/variables.scss';
+@import '../../../generalStyles/mixins.scss';
 
 .container{
+    
     display: flex;
     align-items: center;
     column-gap: 26px;
+    margin-right: 5px;
+    margin-left: 5px;
     & > li{
         color: $text-color;
         font-size: 13px;
         font-family: 'Raleway Regular';
     }
+    @include tablet{
+        display: none;
+    }
+    @include mobile{
+        display: none;
+    }
+    
 }

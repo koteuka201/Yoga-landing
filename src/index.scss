@@ -1,4 +1,5 @@
 @import './generalStyles/variables.scss';
+@import './generalStyles/mixins.scss';
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -35,6 +36,17 @@ a {
   margin: auto;
   margin-top: 20px ;
   border: 1px solid  red;
+  position: relative;
   max-width: 1194px;
   
+  @include tablet{
+    max-width: 768px;
+    margin-left: 36px;
+    margin-right: 36px;
+  }
+  @include mobile{
+    max-width: 375px;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
 }
