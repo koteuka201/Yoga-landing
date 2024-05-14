@@ -1,0 +1,40 @@
+@import '../../generalStyles/variables.scss';
+@import '../../generalStyles/mixins.scss';
+
+.container{
+    // border: 1px solid red;
+    max-height: 682px;
+}
+
+.headContainer{
+    
+    margin-top: 120px;
+    display: grid;
+    position: relative;
+    grid-template-columns: auto auto;
+    grid-template-areas: 
+        'h1 h1 p'
+    ;
+
+}
+
+.h1Module{
+    grid-area: h1;
+}
+.h1{
+    max-width: 692px;
+    font-size: 48px;
+    font-family: $newyorker;
+    font-weight: 400;
+    color: $accent-color;
+}
+.pModule{
+    max-width: 362px;
+    grid-area: p;
+}
+.p{
+    font-family: $raleway-Reg;
+    font-size: 20px;
+    color: $text-color;
+    font-weight: 400;
+}

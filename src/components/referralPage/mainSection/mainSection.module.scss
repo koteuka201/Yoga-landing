@@ -1,0 +1,89 @@
+@import '../../../generalStyles/mixins.scss';
+@import '../../../generalStyles/variables.scss';
+.mainContainer{
+    
+    margin-top: 72px;
+    display: grid;
+    position: relative;
+    grid-template-columns: auto auto;
+    grid-template-areas: 
+        'btn img info'
+        'btn img info'
+        'btn img bar'
+    ;
+
+}
+
+.barContainer{
+    display: flex;
+    // align-items: center;
+    justify-content: start;
+    grid-area: bar;
+    
+}
+.title{
+    color: $text-color;
+    font-family: $raleway-Bold;
+    font-size: 24px;
+}
+
+.time{
+    display: grid;
+    gap: 16px;
+    margin-top: 40px;
+    color: $text-color;
+    font-family: $raleway-Reg;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.description{
+    white-space: pre-line;
+    margin-top: 48px;
+    color: $text-color;
+    font-size: 16px;
+    font-family: $raleway-Reg;
+}
+
+.ml{
+    margin-left: 22.5px;
+}
+
+.flex{
+    display: flex;
+}
+
+
+.btnContainer{
+    width: 319px;
+    grid-area: btn;
+    
+}
+.btnContainer > :nth-child(2n) {
+    margin-left: 8px;
+}
+.btnContainer > :nth-child(3),
+.btnContainer > :nth-child(4),
+.btnContainer > :nth-child(5),
+.btnContainer > :nth-child(6) {
+    margin-top: 8px;
+}
+
+.imgContainer{
+    display: flex;
+    justify-content: center;
+    width: 460px;
+    grid-area: img;
+}
+
+.infoContainer{
+    border: 1px solid red;
+    max-width: 407px;
+    height: 445px;
+    grid-area: info;
+}
+.switchContainer{
+    margin-right: 8px;
+    display: flex;
+    
+}

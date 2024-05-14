@@ -41,8 +41,8 @@ a {
   
   @include tablet{
     max-width: 768px;
-    margin-left: 36px;
-    margin-right: 36px;
+    // margin-left: 36px;
+    // margin-right: 36px;
   }
   @include mobile{
     max-width: 375px;

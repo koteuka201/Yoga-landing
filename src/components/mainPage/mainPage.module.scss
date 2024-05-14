@@ -2,7 +2,6 @@
 @import '../../generalStyles/mixins.scss';
 
 .container{
-    border: 1px solid red;
     margin-top: 115px;
     display: grid;
     position: relative;
@@ -44,7 +43,10 @@
     max-width: 276px;
     display: block;
     grid-area: p;
-    text-align: center;
+    @include mobile{
+        text-align: center;
+    }
+    
 }
 .btnModule{
     display: flex;

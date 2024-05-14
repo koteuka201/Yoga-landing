@@ -19,14 +19,12 @@
         display: none;
     }
 }
-.progressContainer {
-    
-    width: 100%;
-    height: 1px;
-    background-color: #ddd;
-    margin-top: 17px;
-    position: relative;
-    
+.switchers{
+    display: flex;
+    margin-left: 26px;
+    @include tablet{
+        margin-left: 5px;
+    }
 }
 .indexContainer{
     margin-right: 19px;
@@ -36,15 +34,7 @@
     font-size: 16px;
     color: $accent-color;
 }
-.progressBar {
-    
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    background-color: $accent-color;
-    transition: width 0.7s ease;
-}
+
 .slider{
     width: 488px;
     height: 604px;

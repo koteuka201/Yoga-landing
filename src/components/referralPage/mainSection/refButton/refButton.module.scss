@@ -1,0 +1,25 @@
+@import '../../../../generalStyles/mixins.scss';
+@import '../../../../generalStyles/variables.scss'; 
+.container{
+    max-height: 50px;
+    background-color: transparent;
+    border: 1px solid #D2CFC7;
+    font-size: 14px;
+    border-radius: 30px;
+    padding: 16px 32px 16px 32px;
+    color: $text-color;
+    &:hover{
+        border: 1px solid $accent-color;
+        transition: 0.3s;
+    }
+}
+.btnClicked{
+    transition: 0.5s;
+    border: 0;
+    max-height: 50px;
+    font-size: 14px;
+    border-radius: 30px;
+    padding: 16px 32px 16px 32px;
+    background-color: $accent-color;
+    color: $bg-color;
+}

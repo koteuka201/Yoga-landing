@@ -1,0 +1,12 @@
+@import '../../../../generalStyles/mixins.scss';
+
+.slider{
+    width: 346px;
+    height: 493px;
+    border-radius: 173px 173px 192.5px 0px;
+    transition: 0.5s ease;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+}

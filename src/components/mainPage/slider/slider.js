@@ -3,6 +3,7 @@ import styles from './slider.module.scss'
 import { NextBtn } from '../../shared/switchBtn/nextBtn';
 import { PrevBtn } from '../../shared/switchBtn/prevBtn';
 import { Slide } from './slideFun'
+import { ProgressBar } from '../../shared/progressBar/progressBar';
 export const Slider=()=>{
 
     const images = [
@@ -33,14 +34,8 @@ export const Slider=()=>{
                 <div className={styles.indexContainer}>
                     {currentIndex+1}/3
                 </div>
-                
-                <div className={styles.progressContainer}>
-                    <div
-                    className={styles.progressBar}
-                    style={{ width: `${((currentIndex + 1) / images.length) * 100}%` }}
-                    />
-                </div>
-                <div style={{display: 'flex'}}>
+                <ProgressBar currentIndex={currentIndex} images={images.length}/>
+                <div className={styles.switchers}>
                     <PrevBtn goToPrevSlide={goToPrevSlide}/>
                     <NextBtn goToNextSlide={goToNextSlide}/>
                 </div>
