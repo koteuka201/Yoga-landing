@@ -8,5 +8,15 @@
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    
+    @include tablet{
+        width: 312px;
+        height: 422px;
+        border-radius: 156px 156px 156px 0px;
+        
+    }
+    @include mobile{
+        width: 327px;
+        height: 258px;
+        border-radius: 129px 0px 0px 0px;
+    }
 }

@@ -15,26 +15,62 @@
     grid-template-areas: 
         'h1 h1 p'
     ;
-
-}
+    @include mobile{
+        grid-template-areas: 
+            'h1'
+            'p'
+        ;
+    }
+}   
 
 .h1Module{
+    max-width: 692px;
     grid-area: h1;
+    @include tablet{
+        
+        max-width: 423px;
+    }
+    @include mobile{
+        max-width: 307px;   
+        margin-left: 24px;
+    }
 }
 .h1{
-    max-width: 692px;
+    
     font-size: 48px;
     font-family: $newyorker;
     font-weight: 400;
     color: $accent-color;
+    
+    @include tablet{
+        font-size: 30px;
+    }
+    @include mobile{
+        font-size: 26px;
+    }
 }
 .pModule{
     max-width: 362px;
     grid-area: p;
+    @include tablet{
+        max-width: 245px;
+    }
+    @include mobile{
+        margin-top: 32px;
+        max-width: 273px;   
+        margin-left: 24px;
+    }
 }
 .p{
     font-family: $raleway-Reg;
     font-size: 20px;
     color: $text-color;
     font-weight: 400;
+    @include tablet{
+        font-size: 14px;
+        margin-left: 30px;
+    }
+    @include mobile{
+        font-size: 16px;
+    }
 }

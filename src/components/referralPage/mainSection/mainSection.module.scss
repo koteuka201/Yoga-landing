@@ -7,83 +7,213 @@
     position: relative;
     grid-template-columns: auto auto;
     grid-template-areas: 
-        'btn img info'
-        'btn img info'
+        'btn img title'
+        'btn img time'
+        'btn img desc'
         'btn img bar'
     ;
-
+    @include tablet{
+        margin-top: 56px;
+        grid-template-areas: 
+            'btn btn btn btn'
+            'img img time time'
+            'img img title title'
+            'img img desc desc'
+            'img img bar bar'
+        ;
+    }
+    @include mobile{
+        margin-top: 56px;
+        grid-template-areas: 
+            'btn'
+            'img'
+            'title'
+            'time'
+            'desc'
+            'bar'
+        ;
+    }
 }
 
 .barContainer{
+    margin-top: 70px;
     display: flex;
     // align-items: center;
     justify-content: start;
     grid-area: bar;
-    
+    @include tablet{
+        margin-top: 15px;
+        margin-left: 46px;
+    }
+    @include mobile{
+        margin-top: 12px;
+        margin-left: 24px;
+        margin-right: 24px;
+    }
 }
 .title{
+    grid-area: title;
     color: $text-color;
     font-family: $raleway-Bold;
     font-size: 24px;
+    @include tablet{
+        margin-top: 45px;
+        font-size: 15px;
+        margin-left: 46px;
+    }
+    @include mobile{
+        margin-top: 32px;
+        font-size: 15px;
+        margin-left: 24px;
+    }
 }
 
 .time{
+    grid-area: time;
     display: grid;
     gap: 16px;
-    margin-top: 40px;
     color: $text-color;
     font-family: $raleway-Reg;
     font-size: 16px;
     font-weight: 400;
+    margin-top: 40px;
+    @include tablet{
+        margin-top: 32px;
+        gap: 23px;
+        margin-left: 46px;
+    }
+    @include mobile{
+        font-size: 13px;
+        display: flex;
+        margin-top: 16px;
+        margin-left: 24px;
+    }
 }
 
 .description{
+    grid-area: desc;
     white-space: pre-line;
     margin-top: 48px;
     color: $text-color;
     font-size: 16px;
     font-family: $raleway-Reg;
+    height: 205px;
+    @include tablet{
+        font-size: 14px;
+        margin-top: 28px;
+        margin-left: 46px;
+    }
+    @include mobile{
+        height: 100%;
+        // height: 160px;
+        font-size: 13px;
+        margin-top: 24px;
+        margin-left: 24px;
+        margin-right: 24px;
+    }
 }
 
 .ml{
     margin-left: 22.5px;
+    @include mobile{
+        max-width: 88px;
+        margin-left: 11px;
+
+    }
 }
 
-.flex{
+.duration{
     display: flex;
+    @include mobile{
+        justify-content: start;
+    }
 }
-
+.schedule{
+    display: flex;
+    @include mobile{
+        justify-content: start;
+    }
+    
+}
 
 .btnContainer{
     width: 319px;
     grid-area: btn;
-    
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    @include tablet{
+        width: 100%;
+
+    }
+    @include mobile{
+        width: 100%;
+        max-height: 40px;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
 }
 .btnContainer > :nth-child(2n) {
-    margin-left: 8px;
+    @include desktop{
+        margin-left: 8px;
+    }
+}
+.btnContainer > :nth-child(2){
+    @include tablet{
+        
+        margin-left: 8px;
+    }
+    @include mobile{
+        margin-left: 16px;
+    }
 }
 .btnContainer > :nth-child(3),
 .btnContainer > :nth-child(4),
 .btnContainer > :nth-child(5),
 .btnContainer > :nth-child(6) {
     margin-top: 8px;
+    @include tablet{
+        margin-top: 0px;
+        margin-left: 8px;
+    }
+    @include mobile{
+        margin-top: 0px;
+        margin-left: 16px;
+    }
 }
 
 .imgContainer{
+    
     display: flex;
     justify-content: center;
     width: 460px;
     grid-area: img;
+    @include tablet{
+        margin-top: 32px;
+        justify-content: start;
+        width: 100%;
+    }
+    @include mobile{
+        margin-top: 24px;
+        justify-content: center;
+        width: 100%;
+    }
 }
 
-.infoContainer{
-    border: 1px solid red;
-    max-width: 407px;
-    height: 445px;
-    grid-area: info;
-}
 .switchContainer{
     margin-right: 8px;
     display: flex;
     
+}
+.imgStyle{
+    width: 24px;
+    height: 24px;
+    @include tablet{
+        width: 26px;
+        height: 26px;
+    }
+    @include mobile{
+        width: 23px;
+        height: 23px;
+    }
 }

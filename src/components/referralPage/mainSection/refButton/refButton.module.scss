@@ -12,6 +12,18 @@
         border: 1px solid $accent-color;
         transition: 0.3s;
     }
+    @include tablet{
+        max-height: 47px;
+        font-size: 12px;
+        border-radius: 30px;
+        padding: 16px 20px 16px 20px;
+    }
+    @include mobile{
+        max-height: 39px;
+        font-size: 12px;
+        border-radius: 30px;
+        padding: 15px 20px 15px 20px;
+    }
 }
 .btnClicked{
     transition: 0.5s;
@@ -22,4 +34,16 @@
     padding: 16px 32px 16px 32px;
     background-color: $accent-color;
     color: $bg-color;
+    @include tablet{
+        max-height: 47px;
+        font-size: 12px;
+        border-radius: 30px;
+        padding: 16px 20px 16px 20px;
+    }
+    @include mobile{
+        max-height: 39px;
+        font-size: 12px;
+        border-radius: 30px;
+        padding: 15px 20px 15px 20px;
+    }
 }
