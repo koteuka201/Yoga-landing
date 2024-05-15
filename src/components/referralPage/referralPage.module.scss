@@ -3,7 +3,7 @@
 
 .container{
     // border: 1px solid red;
-    max-height: 682px;
+    // max-height: 682px;
 }
 
 .headContainer{
@@ -15,7 +15,11 @@
     grid-template-areas: 
         'h1 h1 p'
     ;
+    @include tablet{
+        margin-top: 100px;
+    }
     @include mobile{
+        margin-top: 88px;
         grid-template-areas: 
             'h1'
             'p'

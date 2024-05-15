@@ -6,3 +6,9 @@ export const getReferral= async ()=>{
 
     return response.data
 }
+export const getPrices= async ()=>{
+
+    const response = await axios.get('http://localhost:3001/prices')
+
+    return response.data
+}

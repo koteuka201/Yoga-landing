@@ -1,0 +1,153 @@
+@import '../../../../generalStyles/mixins.scss';
+@import '../../../../generalStyles/variables.scss';
+
+
+.mainContainer{
+    width: 346px;
+    @include tablet{
+        width: 338px;   
+    }
+    @include mobile{
+        width: 328px;   
+    }
+}
+.mainContainer2{
+    width: 407px;
+    @include tablet{
+        width: 338px;   
+    }
+    @include mobile{
+        width: 328px;   
+    }
+}
+.flexTop{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    @include tablet{
+        margin-bottom: 0;
+    }
+}
+
+.flexBottom{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    @include tablet{
+        margin-top: 0;   
+    }
+}
+
+.costTop{
+    font-family: $raleway-Reg;
+    font-weight: 300;
+    font-size: 45px;
+    color: $text-color;
+    @include tablet{
+        font-size: 32px;
+    }
+    @include mobile{
+        font-size: 32px;   
+    }
+}
+
+.costBottom{
+    font-family: $raleway-Reg;
+    font-weight: 300;
+    font-size: 45px;
+    color: $accent-color;
+    @include tablet{
+        font-size: 32px;
+    }
+    @include mobile{
+        font-size: 32px;   
+    }
+}
+
+.trainingTop{
+    
+    font-family: $raleway-Reg;
+    font-weight: 400;
+    font-size: 42px;
+    color: $text-color;
+    @include tablet{
+        font-size: 32px;
+    }
+    @include mobile{
+        font-size: 32px;   
+    }
+}
+
+.trainingBottom{
+    max-width: 30px;
+    font-family: $raleway-Reg;
+    font-weight: 400;
+    font-size: 42px;
+    color: $accent-color;
+    @include tablet{
+        font-size: 32px;
+    }
+    @include mobile{
+        font-size: 32px;   
+    }
+}
+
+.textTop{
+    font-family: $raleway-Reg;
+    font-weight: 400;
+    font-size: 16px;
+    color: $text-color;
+    max-width: 67px;
+    margin-left: 8px;
+    @include tablet{
+        font-size: 14px;
+    }
+    @include mobile{
+        font-size: 14px;   
+    }
+}
+.textTop2{
+    font-family: $raleway-Reg;
+    font-weight: 400;
+    font-size: 16px;
+    color: $text-color;
+    max-width: 87px;
+    @include tablet{
+        font-size: 14px;
+        max-width: 67px;
+    }
+    @include mobile{
+        font-size: 14px;   
+        max-width: 67px;
+    }
+}
+.textBottom{
+    font-family: $raleway-Reg;
+    font-weight: 400;
+    font-size: 16px;
+    color: $accent-color;
+    margin-bottom: 7px;
+    margin-left: 8px;
+    @include tablet{
+        font-size: 14px;
+    }
+    @include mobile{
+        font-size: 14px;   
+    }
+}
+.textBottom2{
+    font-family: $raleway-Reg;
+    font-weight: 400;
+    font-size: 16px;
+    color: $accent-color;
+    max-width: 135px;
+    @include tablet{
+        font-size: 14px;
+        max-width: 119px;
+        text-align: end;
+    }
+    @include mobile{
+        font-size: 14px;  
+        max-width: 119px; 
+    }
+}

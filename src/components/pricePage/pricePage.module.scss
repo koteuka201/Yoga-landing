@@ -1,0 +1,97 @@
+@import '../../generalStyles/mixins.scss';
+@import '../../generalStyles/variables.scss';
+
+.container{
+    margin-top: 120px;
+    @include tablet{
+        margin-top: 100px;
+    }
+    @include mobile{
+        margin-top: 93px;   
+    }
+}
+
+.headContainer{
+    display: grid;
+    position: relative;
+    grid-template-columns: auto auto;
+    grid-template-areas: 
+        'h1 h1 p1'
+        'h1 h1 p2'
+    ;
+    @include tablet{
+        grid-template-areas: 
+            'h1 h1 p1 p1'
+            'h1 h1 p2 p2'
+        ;
+    }
+    @include mobile{
+        grid-template-areas: 
+            'h1'
+            'p2'
+            'p1'
+        ;
+        margin-left: 24px;   
+    }
+}
+
+.h1Module{
+    width: 720px;
+    grid-area: h1;
+    @include tablet{
+        width: 336px;   
+    }
+    @include mobile{
+        width: 327px;   
+    }
+}
+
+.h1{
+    max-width: 530px;
+    font-family: $newyorker;
+    font-weight: 400;
+    font-size: 48px;
+    color: $accent-color;
+    @include tablet{
+        font-size: 30px;
+    }
+    @include mobile{
+        font-size: 26px;   
+    }
+}
+.p1Module{
+    grid-area: p1;
+    max-width: 383px;
+    @include tablet{
+        max-width: 338px;
+    }
+    @include mobile{
+        max-width: 328px;
+        margin-top: 8px;   
+    }
+}
+.p1,
+.p2{
+    font-family: $raleway-Reg;
+    font-weight: 400px;
+    font-size: 14px;
+    color: $text-color;
+    @include tablet{
+        
+    }
+    @include mobile{
+        font-size: 13px;   
+    }
+}
+
+.p2Module{
+    grid-area: p2;
+    @include tablet{
+        margin-top: 16px;
+        max-width: 261px;
+    }
+    @include mobile{
+        max-width: 328px;
+        margin-top: 24px;
+    }
+}
