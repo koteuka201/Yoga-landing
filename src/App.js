@@ -3,6 +3,7 @@ import {Header} from './components/header/header'
 import { MainPage } from './components/mainPage/mainPage'
 import { ReferralPage } from './components/referralPage/referralPage'
 import { PricePage } from './components/pricePage/pricePage'
+import { SchedulePage } from './components/schedulePage/schedulePage'
 
 export default function App(){
     return(
@@ -11,6 +12,7 @@ export default function App(){
             <MainPage/>
             <ReferralPage/>
             <PricePage/>
+            <SchedulePage/>
         </main>
     )
 }

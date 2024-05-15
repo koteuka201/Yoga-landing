@@ -8,6 +8,7 @@ $text-color: #5B6158;
 $bookman-regular: 'Bookman-400';
 $newyorker: 'NewYorkerC-400';
 $raleway-Reg: 'Raleway-400';
+$raleway-Lit: 'Raleway-300';
 $raleway-Bold: 'Raleway-600';
 
 $tablet-width: 766px;
@@ -32,4 +33,8 @@ $desktop-width:  1194px;
 @font-face {
     font-family: 'Raleway-600';
     src: url('../../public/fonts/Raleway-SemiBold.ttf');
+}
+@font-face {
+    font-family: 'Raleway-300';
+    src: url('../../public/fonts/Raleway-Light.ttf');
 }
