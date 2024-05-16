@@ -9,6 +9,11 @@
     grid-template-areas: 
         'sch sch img'
     ;
+    @include tablet{
+        grid-template-areas: 
+            'sch'
+        ;
+    }
 }
 
 .schModule{
@@ -16,19 +21,66 @@
 }
 .imgContainer{
     grid-area: img;
+    display: flex;
+    justify-content: end;
+    
+}
+.img{
+    width: 407px;
+    height: 478px;
+    border-radius: 0px 193.5px 0px 0px;
+    transform: scaleX(-1);
+    background-size: cover;
+    @include tablet{
+        display: none;   
+    }
+    @include mobile{
+        display: none;   
+    }
 }
 .flex{
     display: flex;
+    justify-content: space-between;
+    width: 591px;
+    @include mobile{
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        // display: block;
+        justify-content: unset;
+        width: 327px;   
+        overflow-x: auto;
+        white-space: nowrap;
+        margin-left: 24px;
+        border-bottom: 1px solid #CBC8C1;
+    }
+}
+.isActive{
+    cursor: pointer;
+    margin-left: 41px;
+    color: $accent-color;
+    font-size: 14px;
+    font-family: $raleway-Reg;
+    padding-bottom: 5px;
+    border-bottom: 2px solid $accent-color;
+    &:first-child{
+        margin-left: 0;
+    }
+}
+.day{
+    margin-left: 41px;
+    cursor: pointer;
     color: $text-color;
     font-size: 14px;
     font-family: $raleway-Reg;
-    opacity: 0.5;
-    justify-content: space-between;
-    max-width: 591px;
-    &>div{
-        &:hover{
-            border-bottom: 2px solid $accent-color;
-            padding-bottom: 5px;
-        }
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s;
+    cursor: pointer;
+    &:hover{
+        border-bottom: 2px solid $accent-color;
+    }
+    &:first-child{
+        margin-left: 0;
     }
 }

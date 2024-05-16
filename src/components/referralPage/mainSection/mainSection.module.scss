@@ -147,7 +147,7 @@
 
     }
     @include mobile{
-        width: 100%;
+        width: 375px;
         max-height: 40px;
         overflow-x: auto;
         white-space: nowrap;

@@ -1,0 +1,149 @@
+@import '../../../../generalStyles/mixins.scss';
+@import '../../../../generalStyles/variables.scss';
+
+.topContainer{
+    margin-top: 15px;
+    @include mobile{
+        margin-left: 24px;   
+    }
+}
+
+.container{
+    
+    display: grid;
+    position: relative;
+    grid-template-columns: 144px 144px 144px 144px 144px;
+    grid-template-areas: 
+        'sub time dur name tools'
+    ;
+    
+    max-width: 712px;
+    border-bottom: 1px solid #CBC8C1;
+    @include tablet{
+        max-width: 696px;
+        grid-template-columns: 140px 140px 140px 140px 140px;
+    }
+    @include mobile{
+        grid-template-columns: 109px 72px 72px 72px;
+        grid-template-areas: 
+            'sub time dur tools'
+            'name time dur tools'
+        ;
+        max-width: 327px;
+    }
+}
+
+.subModule{
+    grid-area: sub;
+    margin-top: 22px;
+    margin-bottom: 22px;
+    @include mobile{
+        margin-top: 16px;
+        margin-bottom: 0px;   
+    }
+}
+
+.timeModule{
+    grid-area: time;
+    margin-top: 22px;
+    margin-bottom: 22px;
+    display: flex;
+    justify-content: center;
+    @include mobile{
+        margin-top: 24px;
+        margin-bottom: 0px;   
+    }
+}
+
+.durModule{
+    grid-area: dur;
+    margin-top: 22px;
+    margin-bottom: 22px;
+    display: flex;
+    justify-content: center;
+    @include mobile{
+        margin-top: 24px;
+        margin-bottom: 0px;   
+    }
+}
+
+.nameModule{
+    grid-area: name;
+    margin-top: 22px;
+    margin-bottom: 22px;
+    display: flex;
+    justify-content: center;
+    @include mobile{
+      margin-top: 0;
+      margin-bottom: 16px;  
+      justify-content: start; 
+    }
+}
+
+.toolsModule{
+    margin-top: 22px;
+    margin-bottom: 22px;
+    grid-area: tools;
+    display: flex;
+    justify-content: center;
+    @include mobile{
+        margin-top: 24px;
+        margin-bottom: 0px;   
+        justify-content: end;
+    }
+}
+
+.sub{
+    font-size: 14px;
+    font-family: $raleway-Reg;
+    font-weight: 400;
+    color: $text-color;
+}
+
+.time{
+    font-size: 14px;
+    font-family: $raleway-Reg;
+    font-weight: 400;
+    color: $text-color;
+}
+
+.dur{
+    font-size: 14px;
+    font-family: $raleway-Reg;
+    font-weight: 400;
+    color: $text-color;
+}
+
+.name{
+
+    font-size: 14px;
+    font-family: $raleway-Reg;
+    font-weight: 400;
+    color: $text-color;
+    @include mobile{
+        font-size: 11px;
+    }
+}
+
+
+.phone{
+    width: 18px;
+    height: 18px;
+    fill: none;
+    &>path{
+        stroke: #98958B;
+    }
+    &:hover{
+        fill: $accent-color;
+    }
+}
+.pen{
+    margin-left: 24px;
+    width: 18px;
+    height: 18px;
+    fill: none;
+    
+    &:hover{
+        fill: $accent-color;
+    }
+}

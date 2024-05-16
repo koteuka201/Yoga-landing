@@ -3,6 +3,12 @@
 
 .container{
     margin-top: 120px;
+    @include tablet{
+        margin-top: 108px;
+    }
+    @include mobile{
+        margin-top: 88px;
+    }
 }
 
 .headContainer{
@@ -12,24 +18,60 @@
     grid-template-areas: 
         'h1 h1 p1'
     ;
+    @include tablet{
+        grid-template-areas: 
+            'h1 p1'
+        ;
+    }
+    @include mobile{
+        grid-template-areas: 
+            'h1'
+            'p1'
+        ; 
+    }
 }
 
 .h1Module{
     grid-area: h1;
     max-width: 657px;
+    @include tablet{
+        max-width: 341px;
+    }
+    @include mobile{
+        max-width: 326px;
+        margin-left: 24px;
+    }   
 }
 .h1{
     font-family: $newyorker;
     font-weight: 400;
     color: $accent-color;
     font-size: 48px;
+    @include tablet{
+        font-size: 30px;   
+    }
+    @include mobile{
+        font-size: 26px;   
+    }
 }
 
 .pModule{
     grid-area: p1;
     max-width: 404px;
+    @include tablet{
+        max-width: 337px;   
+    }
+    @include mobile{
+        max-width: 327px;
+        margin-top: 24px;
+        margin-left: 24px;
+    }
 }
 
 .p{
+    font-size: 14px;
     color: $text-color;
+    @include mobile{
+        font-size: 13px;   
+    }
 }
