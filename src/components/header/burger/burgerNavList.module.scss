@@ -14,9 +14,9 @@
         color: $bg-color;
         padding-left: 5px;
         padding-right: 5px;
+        transition: color 0.3s;
         &:hover{
             color: $text-color;
-            transition: 0.4s;
         }
     }
     @include tablet{
