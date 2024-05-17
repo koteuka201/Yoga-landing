@@ -9,6 +9,10 @@
     background-repeat: no-repeat;
     background-position: center;
     transition: 0.3s;
+    @include tablet {
+        width: 338px;
+        height: 379px;
+    }
 }
 
 .sideImg{
@@ -19,5 +23,10 @@
     background-repeat: no-repeat;
     background-position: center;
     transition: 0.3s;
-
+    @include mobile{
+        width: 154px;
+        height: 197px;
+        opacity: 1;
+        margin-left: 24px;
+    }
 }

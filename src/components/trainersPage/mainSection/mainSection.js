@@ -75,18 +75,15 @@ export const MainSection=()=>{
                             </div>
                         </div>
                     </div>
-                    <div className={styles.barWrapper}>
-                        <div className={styles.barContainer}>
-                            <div className={styles.prevBtnContainer}>
-                                <PrevBtn goToPrevSlide={handlePrevItem}/>
-                            </div>
-                            <div className={styles.nextBtnContainer}>
-                                <NextBtn goToNextSlide={handleNextItem}/>
-                            </div>
-                            <div className={styles.progressBarContainer}>
-                                <ProgressBar currentIndex={currentIndex} images={4}/>
-                            </div>
-                            
+                    <div className={styles.barContainer}>
+                        <div className={styles.prevBtnContainer}>
+                            <PrevBtn goToPrevSlide={handlePrevItem}/>
+                        </div>
+                        <div className={styles.nextBtnContainer}>
+                            <NextBtn goToNextSlide={handleNextItem}/>
+                        </div>
+                        <div className={styles.progressBarContainer}>
+                            <ProgressBar currentIndex={currentIndex} images={4}/>
                         </div>
                     </div>
                 </>

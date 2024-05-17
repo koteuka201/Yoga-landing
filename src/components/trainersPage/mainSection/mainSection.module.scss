@@ -13,10 +13,34 @@
         'img info sideImg'
         'img info bar'
     ;
+    @include tablet{
+        grid-template-columns: 358px auto;
+        grid-template-rows: unset;
+        grid-template-areas: 
+            'img info'
+            'bar bar'
+        ;
+        margin-top: 56px;
+    }
+    @include mobile{
+        grid-template-rows: unset;
+        grid-template-areas: 
+            'sideImg'
+            'bar'
+        ;
+        margin-top: 56px;
+    }
 }
 
 .imgContainer{
     grid-area: img;
+    @include tablet{
+        width: 338px;
+        height: 379px;
+    }
+    @include mobile{
+        display: none;   
+    }
 }
 
 .nameContainer{
@@ -39,6 +63,10 @@
     max-width: 252px;
     padding-left: 26px;
     // padding-right: 26px;
+    @include tablet{
+        max-width: 338px;   
+        padding-right: 26px;
+    }
 }
 .desc{
     font-family: $raleway-Reg;
@@ -59,10 +87,14 @@
         'none'
     ;
     border: 1px solid #CBC9C1;
-
     max-width: 305px;
-
-    
+    @include tablet{
+        max-height: 379px;  
+        max-width: 338px; 
+    }
+    @include mobile{
+        display: none;   
+    }
 }
 
 .sideImgContainer{
@@ -70,15 +102,32 @@
     display: flex;
     justify-content: space-between;
     margin-left: 81px;
+    @include tablet{
+        display: none;   
+    }
+    @include mobile{
+        margin-left: 0;
+        // width: 328;
+        justify-content: unset;
+    }   
 }
+
+
 .sideImg{
     font-family: $raleway-Reg;
     font-size: 16px;
     color: $text-color;
     margin-top: 22px;
     opacity: 60%;
+    @include mobile{
+        margin-top: 16px;   
+        opacity: 1;
+        margin-left: 24px;
+
+    }
 }
 .barContainer{
+    
     max-width: 407px;
     grid-area: bar;
     display: grid;
@@ -87,12 +136,22 @@
         'prevBtn nextBtn bar'
     ;
     margin-left: 81px;
+    align-self: end;
+    @include tablet{
+        margin-left: 0;
+        margin-top: 16px;
+        max-width: 696px;
+        grid-template-columns: 45px 45px 609px;
+    }
+    @include mobile{
+        // align-self: ;
+        margin-left: 24px;
+        margin-top: 12px;   
+        max-width: 327px;
+        grid-template-columns: 45px 45px 237px;
+    }
 }
 
-.barWrapper{
-    display: flex;
-    align-items: end;
-}
 
 .nextBtnContainer{
     grid-area: nextBtn;

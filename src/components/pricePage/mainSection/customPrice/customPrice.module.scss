@@ -2,8 +2,7 @@
 @import '../../../../generalStyles/variables.scss';
 
 
-.mainContainer,
-.mainContainer2{
+.mainContainer{
     width: 346px;
     @include tablet{
         width: 338px;   
@@ -14,7 +13,14 @@
 }
 .mainContainer2{
     width: 407px;
+    @include tablet{
+        width: 338px;   
+    }
+    @include mobile{
+        width: 328px;   
+    }
 }
+
 .flexTop{
     display: flex;
     justify-content: space-between;
