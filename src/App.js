@@ -4,6 +4,7 @@ import { MainPage } from './components/mainPage/mainPage'
 import { ReferralPage } from './components/referralPage/referralPage'
 import { PricePage } from './components/pricePage/pricePage'
 import { SchedulePage } from './components/schedulePage/schedulePage'
+import { TrainersPage } from './components/trainersPage/trainersPage'
 
 export default function App(){
     return(
@@ -13,6 +14,7 @@ export default function App(){
             <ReferralPage/>
             <PricePage/>
             <SchedulePage/>
+            <TrainersPage/>
         </main>
     )
 }

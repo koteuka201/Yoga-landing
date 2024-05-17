@@ -52,9 +52,7 @@ export const Schedule=({data, index})=>{
                     </div>
                 </div>
             ))}
-            <div className={styles.container}>
-                
-            </div>
+        
         </div>
     )
 }

@@ -2,7 +2,8 @@
 @import '../../../../generalStyles/variables.scss';
 
 
-.mainContainer{
+.mainContainer,
+.mainContainer2{
     width: 346px;
     @include tablet{
         width: 338px;   
@@ -13,12 +14,6 @@
 }
 .mainContainer2{
     width: 407px;
-    @include tablet{
-        width: 338px;   
-    }
-    @include mobile{
-        width: 328px;   
-    }
 }
 .flexTop{
     display: flex;

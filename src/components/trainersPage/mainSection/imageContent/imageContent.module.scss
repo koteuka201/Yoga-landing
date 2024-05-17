@@ -1,0 +1,23 @@
+@import '../../../../generalStyles/mixins.scss';
+@import '../../../../generalStyles/variables.scss';
+
+.mainImg{
+    width: 387px;
+    height: 379px;
+    border-radius: 189.5px 0px 0px 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.3s;
+}
+
+.sideImg{
+    width: 184px;
+    height: 236px;
+    opacity: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.3s;
+
+}

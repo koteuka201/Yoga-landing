@@ -7,7 +7,7 @@ export const ScheduleSection=()=>{
 
     const [data,setData]=useState('')
     const [currentIndex, setCurrentIndex]=useState(0)
-    // const []
+    
 
     useEffect( ()=>{
         getData()

@@ -1,0 +1,105 @@
+@import '../../../generalStyles/mixins.scss';
+@import '../../../generalStyles/variables.scss';
+
+.container{
+    margin-top: 72px;
+    display: grid;
+    position: relative;
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+        'img info sideImg'
+        'img info sideImg'
+        'img info sideImg'
+        'img info bar'
+    ;
+}
+
+.imgContainer{
+    grid-area: img;
+}
+
+.nameContainer{
+    grid-area: name;
+    display: flex;
+    align-items: end;
+    padding-left: 26px;
+    padding-right: 26px;
+}
+.name{
+    font-family: $raleway-Reg;
+    font-size: 20px;
+    color: $text-color;
+}
+
+.descContainer{
+    grid-area: desc;
+    display: flex;
+    align-items: end;
+    max-width: 252px;
+    padding-left: 26px;
+    // padding-right: 26px;
+}
+.desc{
+    font-family: $raleway-Reg;
+    font-size: 14px;
+    color: $text-color;
+}
+
+.infoContainer{
+    
+    grid-area: info;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+        'name'
+        'desc'
+        'none'
+        'none'
+    ;
+    border: 1px solid #CBC9C1;
+
+    max-width: 305px;
+
+    
+}
+
+.sideImgContainer{
+    grid-area: sideImg;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 81px;
+}
+.sideImg{
+    font-family: $raleway-Reg;
+    font-size: 16px;
+    color: $text-color;
+    margin-top: 22px;
+    opacity: 60%;
+}
+.barContainer{
+    max-width: 407px;
+    grid-area: bar;
+    display: grid;
+    grid-template-columns: 45px 45px 300px;
+    grid-template-areas: 
+        'prevBtn nextBtn bar'
+    ;
+    margin-left: 81px;
+}
+
+.barWrapper{
+    display: flex;
+    align-items: end;
+}
+
+.nextBtnContainer{
+    grid-area: nextBtn;
+}
+.prevBtnContainer{
+    grid-area: prevBtn;
+}
+.progressBarContainer{
+    grid-area: bar;
+}

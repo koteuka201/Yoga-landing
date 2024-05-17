@@ -179,6 +179,7 @@
     font-weight: 500;
     font-size: 15px;
     transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
     &:hover{
         background-color: transparent;
         color: $accent-color
