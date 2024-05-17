@@ -26,3 +26,10 @@ export const getTrainers= async ()=>{
 
     return response.data
 }
+
+export const getReviews= async ()=>{
+
+    const response = await axios.get('http://localhost:3001/reviews')
+
+    return response.data
+}

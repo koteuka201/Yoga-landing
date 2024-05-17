@@ -1,0 +1,45 @@
+@import '../../../generalStyles/mixins.scss';
+@import '../../../generalStyles/variables.scss';
+
+.container{
+    margin-top: 95px;
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(3, 1fr);
+    // grid-template-areas: ;
+    grid-template-areas: 
+        'mainRev sideRev'
+        'bar bar'
+    ;
+    // justify-content: space-between;
+}
+
+.mainRevContainer{
+    grid-area: mainRev;
+}
+
+.sideRevContainer{
+    display: flex;
+    align-self: center;
+    grid-area: sideRev;
+}
+
+.barContainer{
+    max-width: 1194px;
+    grid-area: bar;
+    display: grid;
+    grid-template-columns: 45px 45px 1104px;
+    grid-template-areas: 
+        'prevBtn nextBtn bar'
+    ;
+}
+
+.nextBtnContainer{
+    grid-area: nextBtn;
+}
+.prevBtnContainer{
+    grid-area: prevBtn;
+}
+.progressBarContainer{
+    grid-area: bar;
+}

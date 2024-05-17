@@ -1,0 +1,90 @@
+@import '../../../../../generalStyles/mixins.scss';
+@import '../../../../../generalStyles/variables.scss';
+
+.container{
+    position: relative;
+    height: 505px;
+    
+}
+.card {
+    position: relative;
+    width: 337px;
+    height: 450px;
+    padding: 24px;
+    background-color: $accent-color;
+    
+
+    .cutout {
+        content: '';
+        position: absolute;
+        transform: translate(-50%, -50%);
+        width: 130px;
+        height: 130px;
+        top: 0;
+        left: 50%;
+        border-radius: 50%;
+        background-color: $bg-color;
+        clip-path: circle(70% at 50% 100%);
+        // background-size: contain;
+        // background-position: center;
+        // background-repeat: no-repeat;
+    }
+
+}
+
+.text{
+    width: 340px;
+    height: 219px;
+    color: $bg-color;
+    font-family: $raleway-Reg;
+    font-size: 14px;
+}
+.cutoutImg {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.name{
+    font-size: 20px;
+    font-family: $raleway-Reg;
+    color: $bg-color;
+    text-align: center;
+    margin: auto;
+}
+.line {
+    width: 80px;
+    height: 2px;
+    background-color: $bg-color;
+    margin: 24px auto;
+}
+.content{
+    margin-top: 95px;
+}
+.footer{
+    margin-top: 24px;
+    display: grid;
+    grid-template-areas: 
+        'more date'
+    ;
+    justify-content: space-between;
+}
+.date{
+    font-family: $raleway-Reg;
+    font-size: 14px;
+    color: $bg-color;
+}
+.more{
+    cursor: pointer;
+    text-decoration: underline;
+    font-family: $raleway-Reg;
+    font-size: 14px;
+    color: $bg-color;
+    // border-bottom: 1px solid $bg-color;
+}

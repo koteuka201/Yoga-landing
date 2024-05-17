@@ -1,0 +1,48 @@
+@import '../../generalStyles/mixins.scss';
+@import '../../generalStyles/variables.scss';
+
+.container{
+    margin-top: 120px;
+}
+
+.headContainer{
+    display: grid;
+    position: relative;
+    grid-template-columns: auto auto;
+    grid-template-areas: 
+        'h1 h1 btn'
+    ;
+    
+}
+
+.h1Module{
+    grid-area:  h1;
+    max-width: 511px;
+}
+.h1{
+    font-family: $newyorker;
+    font-size: 48px;
+    color: $accent-color;
+}
+
+.btnContainer{
+    grid-area: btn;
+    justify-self: end;
+}
+.btn{
+    width: 240px;
+    height: 55px;
+    padding: 18px 50px 18px 50px;
+    border-radius: 52.99px;
+    background-color: $accent-color;
+    color: $bg-color;
+    font-size: 15px;
+    font-family: $raleway-Reg;
+    transition: background-color 0.3s;
+    border: 0;
+    &:hover{
+        background-color: $bg-color;
+        color: $accent-color;
+        border: 1px solid $accent-color;
+    }
+}

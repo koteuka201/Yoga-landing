@@ -1,0 +1,104 @@
+@import '../../../../../generalStyles/mixins.scss';
+@import '../../../../../generalStyles/variables.scss';
+
+.container{
+    position: relative;
+    height: 421px;
+    margin-left: 50px;
+}
+.card {
+    position: relative;
+    width: 247px;
+    height: 390px;
+
+    margin-left: 75px;
+    padding-left: 19px;
+    padding-right: 19px;
+    background-color: $bg-color;
+    border: 1px solid #CBC8C1;
+    
+
+    .cutout {
+        content: '';
+        // position: absolute;
+        // top: 0%;
+        // z-index: 1;
+        // left: 50%;
+        // width: 32%;
+        // height: 60px;
+        // background-color: $bg-color;
+        // clip-path: ellipse(50% 100% at 50% 0%);
+        // transform: translateX(-50%);
+        // background-size: contain;
+        // background-position: center;
+        // background-repeat: no-repeat;
+
+        position: absolute;
+        transform: translate(-50%, -50%);
+        width: 120px;
+        height: 120px;
+        top: 0;
+        left: 50%;
+        border-radius: 50%;
+        border: 1px solid #CBC8C1;
+        background-color: $bg-color;
+        clip-path: circle(70% at 50% 100%);
+    }
+
+}
+
+.text{
+    width: 244px;
+    height: 200px;
+    color: $text-color;
+    font-family: $raleway-Reg;
+    font-size: 14px;
+}
+.cutoutImg {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.name{
+    font-size: 20px;
+    font-family: $raleway-Reg;
+    color: $text-color;
+    text-align: center;
+    margin: auto;
+}
+.line {
+    width: 80px;
+    height: 2px;
+    background-color: $accent-color;
+    margin: 24px auto;
+}
+.content{
+    margin-top: 78px;
+}
+.footer{
+    // margin-top: 24px;
+    display: grid;
+    grid-template-areas: 
+        'more date'
+    ;
+    justify-content: space-between;
+}
+.date{
+    font-family: $raleway-Reg;
+    font-size: 14px;
+    color: $text-color;
+}
+.more{
+    cursor: pointer;
+    text-decoration: underline;
+    font-family: $raleway-Reg;
+    font-size: 14px;
+    color: $text-color;
+}
