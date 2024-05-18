@@ -4,7 +4,7 @@
 .container{
     position: relative;
     height: 421px;
-    margin-left: 50px;
+    // margin-left: 50px;
 }
 .card {
     position: relative;
@@ -16,8 +16,6 @@
     padding-right: 19px;
     background-color: $bg-color;
     border: 1px solid #CBC8C1;
-    
-
     .cutout {
         content: '';
         position: absolute;
@@ -34,6 +32,13 @@
         background-position: center;
         background-repeat: no-repeat;
     }
+    @include tablet{
+        width: 245px;
+        height: 421px;   
+        padding-left: 22px;
+        padding-right: 22px;
+        margin-left: 55px;
+    }
 
 }
 
@@ -43,6 +48,9 @@
     color: $text-color;
     font-family: $raleway-Reg;
     font-size: 14px;
+    @include tablet{
+        height: 255px;
+    }
 }
 .cutoutImg {
     position: absolute;
@@ -57,17 +65,23 @@
     
 }
 .name{
-    font-size: 20px;
+    font-size: 14px;
     font-family: $raleway-Reg;
     color: $text-color;
     text-align: center;
     margin: auto;
+    @include tablet{
+        // font-size: 14px;
+    }
 }
 .line {
     width: 80px;
     height: 2px;
     background-color: $accent-color;
     margin: 24px auto;
+    @include tablet{
+     margin: 16px auto;
+    }
 }
 .content{
     margin-top: 78px;

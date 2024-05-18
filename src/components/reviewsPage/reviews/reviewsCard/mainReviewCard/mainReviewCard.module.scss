@@ -4,7 +4,12 @@
 .container{
     position: relative;
     height: 505px;
-    
+    @include tablet{
+        height: 465px;
+    }
+    @include mobile{
+        height: 438px;   
+    }
 }
 .card {
     position: relative;
@@ -12,7 +17,6 @@
     height: 450px;
     padding: 24px;
     background-color: $accent-color;
-    
 
     .cutout {
         content: '';
@@ -28,8 +32,22 @@
         background-size: 80% 80%;
         background-position: center;
         background-repeat: no-repeat;
+        @include mobile{
+            width: 98px;
+            height: 98px;
+        }
     }
 
+    @include tablet{
+        width: 306px;
+        padding: 17px;   
+        height: 421px;
+        padding-bottom: 12px;
+    }
+    @include mobile{
+        width: 280px;
+        height: 390px;
+    }
 }
 
 .text{
@@ -38,6 +56,14 @@
     color: $bg-color;
     font-family: $raleway-Reg;
     font-size: 14px;
+    @include tablet{
+        width: 301px;   
+        height: 171px;
+    }
+    @include mobile{
+        width: 282px;
+        font-size: 13px;
+    }
 }
 .cutoutImg {
     position: absolute;
@@ -57,6 +83,9 @@
     color: $bg-color;
     text-align: center;
     margin: auto;
+    @include mobile{
+        font-size: 16px;
+    }
 }
 .line {
     width: 80px;
@@ -66,6 +95,9 @@
 }
 .content{
     margin-top: 95px;
+    @include mobile{
+        margin-top: 60px;
+    }
 }
 .footer{
     margin-top: 24px;
@@ -74,11 +106,20 @@
         'more date'
     ;
     justify-content: space-between;
+    @include tablet{
+        margin-top: 50px;   
+    }
+    @include mobile{
+        justify-content: end;   
+    }
 }
 .date{
     font-family: $raleway-Reg;
     font-size: 14px;
     color: $bg-color;
+    @include mobile{
+        font-size: 16px;
+    }
 }
 .more{
     cursor: pointer;
@@ -86,5 +127,9 @@
     font-family: $raleway-Reg;
     font-size: 14px;
     color: $bg-color;
-    // border-bottom: 1px solid $bg-color;
+    
+    @include mobile{
+        display: none;   
+        
+    }
 }

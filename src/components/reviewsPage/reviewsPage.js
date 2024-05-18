@@ -16,6 +16,9 @@ export const ReviewsPage=()=>{
                 </div>
             </div>
             <Reviews/>
+            <div className={styles.btnMobile}>
+                <button className={styles.btn}>ОСТАВИТЬ ОТЗЫВ</button>
+            </div>
         </div>
     )
 }

@@ -3,6 +3,13 @@
 
 .container{
     margin-top: 120px;
+    @include tablet{
+        margin-top: 100px;   
+    }
+    @include mobile{
+        margin-top: 93px;
+        margin-left: 24px;
+    }
 }
 
 .headContainer{
@@ -12,23 +19,58 @@
     grid-template-areas: 
         'h1 h1 btn'
     ;
-    
+    @include tablet{
+        grid-template-areas: 
+            'h1'
+        ;
+    }
+    @include mobile{
+        grid-template-areas: 
+            'h1'
+        ;   
+    }
 }
 
 .h1Module{
     grid-area:  h1;
     max-width: 511px;
+    @include tablet{
+        max-width: 340px;   
+    }
+    @include mobile{
+        max-width: 266px;   
+    }
 }
 .h1{
     font-family: $newyorker;
     font-size: 48px;
     color: $accent-color;
+    @include tablet{
+        font-size: 32px;
+    }
+    @include mobile{
+        font-size: 26px;   
+    }
 }
 
 .btnContainer{
     grid-area: btn;
     justify-self: end;
+    @include tablet{
+        display: none;   
+    }
+    @include mobile{
+        display: none;   
+    }
 }
+
+.btnMobile{
+    display: none;
+    @include mobile{
+        display: block;
+    }
+}
+
 .btn{
     width: 240px;
     height: 55px;
@@ -44,5 +86,11 @@
         background-color: $bg-color;
         color: $accent-color;
         border: 1px solid $accent-color;
+    }
+    @include mobile{
+        margin-top: 16px;
+        width: 327px;
+        height: 75px;
+
     }
 }

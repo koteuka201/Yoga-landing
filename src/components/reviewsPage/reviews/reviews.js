@@ -49,18 +49,22 @@ export const Reviews=()=>{
                         <MainReviewCard name={data[currentIndex].name} text={data[currentIndex].text}  date={data[currentIndex].date} img={images[currentIndex]}/>
                     </div>
                     <div className={styles.sideRevContainer}>
-                        <SideReviewCard 
-                            name={data[(currentIndex+1)%5].name} 
-                            text={data[(currentIndex+1)%5].text}  
-                            date={data[(currentIndex+1)%5].date} 
-                            img={images[(currentIndex+1)%5]} 
-                            more={()=>setCurrentIndex((currentIndex+1)%5)}/>
-                        <SideReviewCard 
-                            name={data[(currentIndex+2)%5].name} 
-                            text={data[(currentIndex+2)%5].text}  
-                            date={data[(currentIndex+2)%5].date} 
-                            img={images[(currentIndex+2)%5]}
-                            more={()=>setCurrentIndex((currentIndex+2)%5)}/>
+                        <div className={styles.sideRev1}>
+                            <SideReviewCard 
+                                name={data[(currentIndex+1)%5].name} 
+                                text={data[(currentIndex+1)%5].text}  
+                                date={data[(currentIndex+1)%5].date} 
+                                img={images[(currentIndex+1)%5]} 
+                                more={()=>setCurrentIndex((currentIndex+1)%5)}/>
+                        </div>
+                        <div className={styles.sideRev2}>
+                            <SideReviewCard 
+                                name={data[(currentIndex+2)%5].name} 
+                                text={data[(currentIndex+2)%5].text}  
+                                date={data[(currentIndex+2)%5].date} 
+                                img={images[(currentIndex+2)%5]}
+                                more={()=>setCurrentIndex((currentIndex+2)%5)}/>
+                        </div>
                     </div>
                     <div className={styles.barContainer}>
                         <div className={styles.prevBtnContainer}>

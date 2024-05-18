@@ -6,22 +6,50 @@
     display: grid;
     position: relative;
     grid-template-columns: repeat(3, 1fr);
-    // grid-template-areas: ;
     grid-template-areas: 
         'mainRev sideRev'
         'bar bar'
     ;
-    // justify-content: space-between;
+    justify-content: space-between;
+    @include tablet{
+        margin-top: 56px;
+    }
+    @include mobile{
+        margin-top: 36px;   
+    }
 }
 
 .mainRevContainer{
     grid-area: mainRev;
+    
 }
 
 .sideRevContainer{
-    display: flex;
+    display: grid;
+    grid-template-areas: 
+        'sideRev1 sideRev2'
+    ;
     align-self: center;
     grid-area: sideRev;
+    @include tablet{
+        align-self: unset;
+        margin-top: 15px;
+    }
+    @include mobile{
+        display: none;   
+    }
+}
+
+.sideRev1{
+    grid-area: sideRev1;
+}
+
+.sideRev2{
+    grid-area: sideRev2;
+    @include tablet{
+        display: none;
+    }
+    
 }
 
 .barContainer{
@@ -33,6 +61,13 @@
     grid-template-areas: 
         'prevBtn nextBtn bar'
     ;
+    @include tablet{
+        margin-top: 0;
+        grid-template-columns: 45px 45px 595px;
+    }
+    @include mobile{
+        grid-template-columns: 45px 45px 245px;
+    }
 }
 
 .nextBtnContainer{
