@@ -4,7 +4,7 @@ import { Prices } from './mainSection/prices'
 
 export const PricePage=()=>{
     return(
-        <div className={styles.container}>
+        <div id='price' className={styles.container}>
             <div className={styles.headContainer}>
                 <div className={styles.h1Module}>
                     <h1 className={styles.h1}>

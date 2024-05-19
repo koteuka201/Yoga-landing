@@ -5,7 +5,7 @@ import { Manual } from './manual/manual'
 
 export const MainPage=()=>{
     return(
-        <div className={styles.container}>
+        <div id='main' className={styles.container}>
             <div className={styles.h1Module}>
                 <h1 className={styles.h1}>студия йоги и пилатеса</h1>
             </div>

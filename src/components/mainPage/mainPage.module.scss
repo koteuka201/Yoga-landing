@@ -92,6 +92,9 @@
     }
 }
 .slider{
+    @include desktop{
+        align-self: end;
+    }
     display: flex;
     justify-content: end;
     grid-area: slider;

@@ -3,7 +3,7 @@ import styles from './schedulePage.module.scss'
 import { ScheduleSection } from "./scheduleSection/scheduleSection";
 export const SchedulePage=()=>{
     return(
-        <div className={styles.container}>
+        <div id="schedule" className={styles.container}>
             <div className={styles.headContainer}>
                 <div className={styles.h1Module}>
                     <h1 className={styles.h1}>найдите свою практику в нашем расписании</h1>

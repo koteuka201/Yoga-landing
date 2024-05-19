@@ -4,19 +4,19 @@ export const Navlist=()=>{
     return(
         <ul className={styles.container }>
             <li>
-                <a href="#">ПРОГРАММЫ</a>
+                <a href="#main">ПРОГРАММЫ</a>
             </li>
             <li>
-                <a href="#">ПРАЙС</a>
+                <a href="#price">ПРАЙС</a>
             </li>
             <li>
-                <a href="#">РАСПИСАНИЕ</a>
+                <a href="#schedule">РАСПИСАНИЕ</a>
             </li>
             <li>
-                <a href="#">ОТЗЫВЫ</a>
+                <a href="#reviews">ОТЗЫВЫ</a>
             </li>
             <li>
-                <a href="#">КОНТАКТЫ</a>
+                <a href="#contacts">КОНТАКТЫ</a>
             </li>
         </ul>
     )
