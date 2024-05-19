@@ -6,6 +6,7 @@ import { PricePage } from './components/pricePage/pricePage'
 import { SchedulePage } from './components/schedulePage/schedulePage'
 import { TrainersPage } from './components/trainersPage/trainersPage'
 import { ReviewsPage } from './components/reviewsPage/reviewsPage'
+import { FAQPage } from './components/FAQPage/FAQPage'
 
 export default function App(){
     return(
@@ -17,6 +18,7 @@ export default function App(){
             <SchedulePage/>
             <TrainersPage/>
             <ReviewsPage/>
+            <FAQPage/>
         </main>
     )
 }

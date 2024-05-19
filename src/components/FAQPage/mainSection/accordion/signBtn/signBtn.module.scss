@@ -1,0 +1,28 @@
+@import '../../../../../generalStyles/variables.scss';
+
+.plusBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1px solid $text-color;
+    background-color: $bg-color;
+    color: $text-color;
+    transition:background-color 0.3s;
+    cursor: pointer;
+}
+.minusBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 0;
+    background-color: $accent-color;
+    color: $bg-color;
+    transition:background-color 0.3s;
+    cursor: pointer;
+}

@@ -1,0 +1,73 @@
+@import '../../../generalStyles/mixins.scss';
+@import '../../../generalStyles/variables.scss';
+
+.container{
+    margin-top: 30px;
+    height: 501px;
+    display: grid;
+    position: relative;
+    grid-template-columns: auto auto;
+    grid-template-areas: 
+        'accord img'
+    ;
+    @include tablet{
+        grid-template-columns: 365px auto;
+        height: 492px;
+        margin-top: 56px;
+    }
+    @include mobile{
+        grid-template-columns: 327px;
+
+        grid-template-areas: 
+            'img'
+            'accord'
+        ;
+        margin-top: 56px;
+        margin-top: 32px;
+        height: 100%;
+    }
+}
+
+.accordContainer{
+    grid-area: accord;
+    max-width: 712px;
+    align-self: end;
+    @include tablet{
+        max-width: 338px;
+    }
+    @include mobile{
+        margin-top: 32px;
+        max-width: 327px;
+    }
+}
+
+.accord{
+
+}
+
+.imgContainer{
+    grid-area: img;
+    justify-self: end;
+    align-self: end;
+    @include tablet{
+        justify-self: start;
+    }
+    @include mobile{
+        align-self: start;
+    }
+}
+
+img{
+    width: 407px;
+    height: 501px;
+    border-radius: 244px 244px 0px 0px;
+    @include tablet{
+        width: 338px;
+        height: 467px;
+    }
+    @include mobile{
+        max-width: 327px;
+        max-height: 336px;
+        align-self: start;
+    }
+}
