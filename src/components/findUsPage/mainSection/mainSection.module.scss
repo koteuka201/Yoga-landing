@@ -1,0 +1,20 @@
+@import '../../../generalStyles/variables.scss';
+@import '../../../generalStyles/mixins.scss';
+
+.container{
+    display: grid;
+    position: relative;
+    grid-template-columns: auto;
+    grid-template-areas: 
+        'fields'
+        'map'
+    ;
+}
+
+.fieldModule{
+    grid-area: fields;
+}
+
+.mapModule{
+    grid-area: map;
+}

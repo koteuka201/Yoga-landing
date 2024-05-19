@@ -7,6 +7,7 @@ import { SchedulePage } from './components/schedulePage/schedulePage'
 import { TrainersPage } from './components/trainersPage/trainersPage'
 import { ReviewsPage } from './components/reviewsPage/reviewsPage'
 import { FAQPage } from './components/FAQPage/FAQPage'
+import { FindUsPage } from './components/findUsPage/findUsPage'
 
 export default function App(){
     return(
@@ -19,6 +20,7 @@ export default function App(){
             <TrainersPage/>
             <ReviewsPage/>
             <FAQPage/>
+            <FindUsPage/>
         </main>
     )
 }

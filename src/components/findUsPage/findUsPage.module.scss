@@ -1,0 +1,40 @@
+@import '../../generalStyles/mixins.scss';
+@import '../../generalStyles/variables.scss';
+
+.container{
+    margin-top: 120px;
+    @include tablet{
+        margin-top: 100px;
+        margin-left: 35px;
+    }
+    @include mobile{
+        margin-top: 88px;
+        margin-left: 24px;
+    }
+}
+
+.headContainer{
+    display: grid;
+    position: relative;
+    grid-template-columns: auto;
+    grid-template-areas: 
+        'h1'
+    ;
+}
+
+.h1Module{
+    grid-area: h1;
+}
+
+.h1{
+    font-size: 48px;
+    font-family: $newyorker;
+    font-weight: 400;
+    color: $accent-color;
+    @include tablet{
+        font-size: 32px;   
+    }
+    @include mobile{
+        font-size: 26px;
+    }
+}

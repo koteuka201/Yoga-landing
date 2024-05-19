@@ -1,0 +1,175 @@
+@import '../../../../generalStyles/variables.scss';
+@import '../../../../generalStyles/mixins.scss';
+
+.container{
+    margin-top: 62px;
+    display: grid;
+    position: relative;
+    grid-template-columns: auto auto;
+    grid-template-areas: 
+        'name phone box btn'
+    ;
+    justify-content: space-between;
+    align-items: center;
+    @include tablet{
+        margin-top: 56px;   
+        grid-template-areas: 
+            'name phone box '
+            'btn btn social'
+        ;
+        width: 696px;
+    }
+    @include mobile{
+        margin-top: 56px;   
+        grid-template-areas: 
+            'contact contact'
+            'name phone'
+            'quest quest'
+            'box box'
+            'btn social'
+        ;
+        width: 327px;
+        margin-top: 0;
+    }
+}
+
+.contactUsModule{
+    grid-area: contact;
+    display: none;
+    @include mobile{
+        display: block;
+    }
+}
+.contactUs{
+    margin-top: 54px;
+    font-size: 15px;
+    font-family: $raleway-Bold;
+    color: $text-color;
+    font-weight: 600;
+}
+.socialModule{
+    grid-area: social;
+    display: none;
+    align-self: end;
+    @include tablet{
+        display: block;   
+    }
+    @include mobile{
+        display: block;
+        margin-left: 15px;
+    }
+    
+}
+
+.nameModule{
+    grid-area: name;
+}
+
+.name{
+    width: 280px;
+    height: 21px;
+    border: 0;
+    border-bottom: 1px solid #98958B;
+    background-color: transparent;
+    font-size: 14px;
+    font-family: $raleway-Reg;
+    font-weight: 400;
+    cursor: pointer;
+    padding: 10px;
+    @include tablet{
+        width: 163px;
+        height: 17px;   
+    }
+    @include mobile{
+        margin-top: 24px;
+        width: 134px;
+        height: 17px;  
+    }
+}
+
+.phoneModule{
+    grid-area: phone;
+}
+
+.phone{
+    width: 280px;
+    height: 21px;
+    border: 0;
+    border-bottom: 1px solid #98958B;
+    background-color: transparent;
+    font-size: 14px;
+    font-family: $raleway-Reg;
+    font-weight: 400;
+    cursor: pointer;
+    padding: 10px;
+    @include tablet{
+        width: 208px;
+        height: 17px;   
+    }
+    @include mobile{
+        margin-top: 24px;
+        width: 134px;
+        height: 17px; 
+    }
+}
+
+.boxModule{
+    @include mobile{
+        margin-top: 24px;
+    }
+    grid-area: box;
+    display: flex;
+    height: 33px;
+    width: 169px;
+    align-items: center;
+}
+
+.checkBox{
+    
+    width: 16px;
+    height: 16px;
+}
+
+.box{
+    margin-left: 8px;
+    font-size: 10px;
+    font-family: $raleway-Reg;
+    font-weight: 400;
+    color: $text-color;
+    width: 145px;
+    
+}
+
+.btnModule{
+    grid-area: btn;
+}
+.btn{
+    cursor: pointer;
+    font-size: 15px;
+    font-family: $raleway-Reg;
+    font-weight: 500;
+    color: $bg-color;
+    padding: 22px 56px 24px 56px;
+    background-color: $accent-color;
+    border: 0;
+    width: 285px;
+    height: 55px;
+    border-radius: 53px;
+    transition: background-color 0.3s;
+    &:hover{
+        border: 1px solid $accent-color;
+        background-color: $bg-color;
+        color: $accent-color;
+        
+    }
+    @include tablet{
+        margin-top: 65px;   
+    }
+    @include mobile{
+        padding: 12px 39px 12px 39px;
+        font-size: 13px;
+        width: 154px;
+        height: 43px;
+        margin-top: 24px;
+    }
+}

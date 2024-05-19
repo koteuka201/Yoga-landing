@@ -1,0 +1,96 @@
+@import '../../../../generalStyles/mixins.scss';
+@import '../../../../generalStyles/variables.scss';
+
+.container{
+    margin-top: 53px;
+    position: relative;
+    @include tablet{
+        margin-top: 39px;
+    }
+    @include mobile{
+    
+        // height: 496px; 
+    }
+}
+
+.map{
+    width: 1194px;
+    height: 478px;
+    @include tablet{
+        width: 695px;
+    }
+    @include mobile{
+        width: 327px;
+        height: 333px;
+        margin-top: 280px;
+
+        background-position: center;
+    }
+}
+
+.block{
+    width: 414px;
+    height: 318px;
+    background-color: $accent-color;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 80px;
+    margin-left: 82px;
+    padding-top: 60px;
+    padding-left: 60px;
+    @include tablet{
+        padding-top: 42px;
+        padding-left: 34px;
+        width: 339px;
+        height: 273px;
+        margin-left: 0;
+        margin-top: 109px;
+    }
+    @include mobile{
+        margin-top: 0px;
+        margin-left: 0px;
+        padding-top: 42px;
+        padding-left: 34px;
+        width: 293px;
+        height: 177px; 
+        top: -65%;
+    }
+    
+}
+
+.phone,
+.address,
+.email{
+    font-size: 14px;
+    font-family: $raleway-Reg;
+    font-weight: 400;
+    color: $bg-color;
+    margin-left: 8px;
+    
+}
+
+.addressContainer,
+.emailModule{
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    @include tablet{
+        margin-top: 16px;   
+    }
+}
+.phoneModule{
+    display: flex;
+    align-items: center;
+}
+
+.socialBlock{
+    margin-top: 72px;
+    @include tablet{
+        margin-top: 78px;   
+    }
+    @include mobile{
+        display: none;
+    }
+}
+

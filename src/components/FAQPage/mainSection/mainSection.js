@@ -10,7 +10,7 @@ export const MainSection=()=>{
                 <Accordion/>
             </div>
             <div className={styles.imgContainer}>
-                <img className={styles.img} src="/assets/faq/faq-2.png" alt="faqImg" />
+                <img className={styles.img} src="/assets/faq/faq-1.jpg" alt="faqImg" />
             </div>
         </div>
     )
