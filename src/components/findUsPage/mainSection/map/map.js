@@ -7,7 +7,7 @@ export const Map=()=>{
             <div
                 className={styles.map}
                 style={{
-                    backgroundImage: `url('/assets/findUs/map.png')`
+                    backgroundImage: `url('/assets/findUs/map (1).png')`
                 }}
             >
                 
