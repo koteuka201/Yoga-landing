@@ -3,7 +3,7 @@ import { MainSection } from './mainSection/mainSection'
 
 export const FindUsPage=()=>{
     return(
-        <div className={styles.container}>
+        <div id='contacts' className={styles.container}>
             <div className={styles.headContainer}>
                 <div className={styles.h1Module}>
                     <div className={styles.h1}>
