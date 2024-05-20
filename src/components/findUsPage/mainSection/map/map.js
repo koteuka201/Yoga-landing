@@ -34,15 +34,19 @@ export const Map=()=>{
                     <path d="M12.8333 3.5L6.99996 7.58333L1.16663 3.5" stroke="#FEFBF7" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                     </div>
-                    
-
-
                     <span className={styles.email}>balans@maiil.ru</span>
                 </div>
                 <div className={styles.socialBlock}>
                     <SocialBlock/>
                 </div>
+                <div
+                    className={styles.flower}
+                    style={{backgroundImage: `url('/assets/flowers/findUsFlower-(2).svg')`}}
+                >
+
+                </div>
             </div>
+
         </div>
     )
 }
