@@ -1,12 +1,11 @@
 @import '../../../generalStyles/mixins.scss';
 @import '../../../generalStyles/variables.scss';
-
 .container{
     margin-top: 30px;
     height: 501px;
     display: grid;
     position: relative;
-    grid-template-columns: auto auto;
+    grid-template-columns: 720px 470px;
     grid-template-areas: 
         'accord img'
     ;
@@ -49,6 +48,7 @@
     grid-area: img;
     justify-self: end;
     align-self: end;
+
     @include tablet{
         justify-self: start;
     }
@@ -57,10 +57,13 @@
     }
 }
 
-img{
+.img{
     width: 407px;
-    height: 501px;
+    height: 500px;
     border-radius: 244px 244px 0px 0px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     @include tablet{
         width: 338px;
         height: 467px;

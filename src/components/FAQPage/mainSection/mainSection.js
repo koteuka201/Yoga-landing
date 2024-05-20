@@ -9,9 +9,16 @@ export const MainSection=()=>{
             <div className={styles.accordContainer}>
                 <Accordion/>
             </div>
+            
             <div className={styles.imgContainer}>
-                <img className={styles.img} src="/assets/faq/faq-1.jpg" alt="faqImg" />
+                <div 
+                    className={styles.img}
+                    style={{backgroundImage: `url('/assets/faq/faq-1.jpg')`}}
+                >
+
+                </div>
             </div>
+
         </div>
     )
 }
