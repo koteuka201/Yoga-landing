@@ -8,6 +8,7 @@ import { TrainersPage } from './components/trainersPage/trainersPage'
 import { ReviewsPage } from './components/reviewsPage/reviewsPage'
 import { FAQPage } from './components/FAQPage/FAQPage'
 import { FindUsPage } from './components/findUsPage/findUsPage'
+import { Footer } from './components/footer/footer'
 
 export default function App(){
     return(
@@ -21,6 +22,7 @@ export default function App(){
             <ReviewsPage/>
             <FAQPage/>
             <FindUsPage/>
+            <Footer/>
         </main>
     )
 }

@@ -1,0 +1,177 @@
+@import '../../generalStyles/mixins.scss';
+@import '../../generalStyles/variables.scss';
+
+.footer{
+    
+    height: 257px;
+    background-color: $accent-color;
+    @include tablet{
+        height: 291px;
+    }
+    @include mobile{
+        height: 296px;
+        padding: 28px 23px 28px 23px;
+
+    }
+}
+
+.container{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 302px 589px  302px;
+    grid-template-rows: 129px 128px;
+
+    grid-template-areas: 
+        'contact nav social'
+        'agreement logo policy'
+    ;
+    @include tablet{
+        padding-left: 36px;
+        padding-right: 36px;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            'nav logo contact'
+            'nav logo contact'
+            'nav logo contact'
+            'nav logo contact'
+            'social logo policy'
+            'social logo agreement'
+
+        ;
+    }
+    @include mobile{
+        // padding: 28px 23px 28px 23px;
+        grid-template-columns: 1fr 1fr;
+        padding: 0;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            'logo social'
+            'nav contact'
+            'nav agreement'
+            'nav policy'
+
+        ;
+    }
+}
+
+.contactModule{
+    
+    grid-area: contact;
+    @include tablet{
+        width: 132px;   
+        justify-self: end;
+    }
+    @include mobile{
+        width: 132px;
+        justify-self: end;   
+    }
+}
+.contact{
+    margin-top: 40px;
+    
+    &>div{
+        font-size: 12px;
+        font-family: $raleway-Reg;
+        font-weight: 400;
+        color: $bg-color;
+    }
+    @include tablet{
+        margin-top: 19px;
+    }
+}
+.mt{
+    margin-top: 8px;
+    @include tablet{
+        margin-top: 16px;   
+    }
+}   
+
+.navModule{
+    margin-top: 33px;    
+    grid-area: nav;
+    height: 40px;
+    @include tablet{
+        margin-top: 12px;
+    }
+    @include mobile{
+           
+    }
+}
+
+.socialModule{
+    grid-area: social;
+    justify-self: end;
+    height: 40px;
+    margin-top: 40px;
+    @include tablet{
+        margin-top: 0;   
+        justify-self: start;
+        align-self: center;
+    }
+    @include mobile{
+        margin-top: 0;
+        align-self: start;
+    }
+}
+
+.agreementModule{
+    grid-area: agreement;
+    align-self: center;
+    @include tablet{
+        align-self: start; 
+        margin-top: 12px;  
+    }
+    @include mobile{
+        width: 102px;
+        justify-self: center;   
+        align-self: end;
+    }
+}
+.agreement{
+    font-size: 10px;
+    font-family: $raleway-Reg;
+    font-weight: 400;
+    color: $bg-color;
+    @include tablet{
+        text-align: end; 
+        
+    }
+    @include mobile{
+        font-size: 9px;
+    }
+}
+
+.logoModule{
+    grid-area: logo;
+    align-self: center;
+    justify-self: center;
+    @include mobile{
+        align-self: start;
+        justify-self: unset;   
+    }
+}
+
+.policyModule{
+    grid-area: policy;
+    align-self: center;
+    justify-self: end;
+    @include tablet{
+        align-self: end;  
+    }
+    @include mobile{
+        margin-top: 22px;
+    }
+}
+.policy{
+    font-size: 10px;
+    font-family: $raleway-Reg;
+    font-weight: 400;
+    color: $bg-color;
+    @include tablet{
+        text-align: end; 
+    }
+    @include mobile{
+        font-size: 9px;   
+    }
+}

@@ -29,8 +29,8 @@
 }
 
 .block{
-    width: 414px;
-    height: 318px;
+    width: 354px;
+    height: 258px;
     background-color: $accent-color;
     position: absolute;
     top: 0;
@@ -42,8 +42,8 @@
     @include tablet{
         padding-top: 42px;
         padding-left: 34px;
-        width: 339px;
-        height: 273px;
+        width: 305px;
+        height: 231px;
         margin-left: 0;
         margin-top: 109px;
     }
