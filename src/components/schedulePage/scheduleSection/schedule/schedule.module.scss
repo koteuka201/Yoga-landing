@@ -128,6 +128,7 @@
 
 .phone{
     width: 18px;
+    margin-left: 24px;
     height: 18px;
     fill: none;
     &>path{
@@ -135,10 +136,11 @@
     }
     &:hover{
         fill: $accent-color;
+        
     }
 }
 .pen{
-    margin-left: 24px;
+    
     width: 18px;
     height: 18px;
     fill: none;
