@@ -1,0 +1,45 @@
+@import '../../../../generalStyles/variables.scss'; 
+
+.socialBtn,
+.socialBtnMobile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    // border: 1px solid $bg-color;
+    
+    // background-color: transparent;
+    // color: $bg-color;
+    
+    // transition: background-color 0.3s, color 0.3s;
+    // &:hover{
+    //     color: $accent-color;
+    //     background-color: $bg-color;
+    // }
+}
+.socialBtn{
+    border: 1px solid $bg-color;
+    
+    background-color: transparent;
+    color: $bg-color;
+    
+    transition: background-color 0.3s, color 0.3s;
+    &:hover{
+        color: $accent-color;
+        background-color: $bg-color;
+    }
+}
+.socialBtnMobile{
+    border: 1px solid $accent-color;
+    
+    background-color: transparent;
+    color: $accent-color;
+    
+    transition: background-color 0.3s, color 0.3s;
+    &:hover{
+        color: $bg-color;
+        background-color: $accent-color;
+    }
+}
