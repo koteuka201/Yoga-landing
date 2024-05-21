@@ -2,7 +2,7 @@ import styles from './referralPage.module.scss'
 import { MainSection } from './mainSection/mainSection'
 export const ReferralPage=()=>{
     return(
-        <div className={styles.container}>
+        <div id='referral' className={styles.container}>
             <div className={styles.headContainer}>
                 <div className={styles.h1Module}>
                     <h1 className={styles.h1}>все направления в одном абонементе</h1>

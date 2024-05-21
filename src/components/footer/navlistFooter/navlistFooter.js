@@ -7,19 +7,19 @@ export const NavlistFooter=()=>{
                 <a href="#main">Главная</a>
             </li>
             <li>
-                <a href="#price">Направления</a>
+                <a href="#referral">Направления</a>
             </li>
             <li>
-                <a href="#schedule">Прайс</a>
+                <a href="#price">Прайс</a>
             </li>
             <li>
-                <a href="#reviews">Расписание</a>
+                <a href="#schedule">Расписание</a>
             </li>
             <li>
-                <a href="#contacts">Отзывы</a>
+                <a href="#reviews">Отзывы</a>
             </li>
             <li>
-                <a href="#contacts">FAQ</a>
+                <a href="#FAQ">FAQ</a>
             </li>
             <li>
                 <a href="#contacts">Контакты</a>
