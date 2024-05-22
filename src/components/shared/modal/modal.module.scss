@@ -12,7 +12,6 @@
     justify-content: center;
     z-index: 10;
 }
-  
 .modal {
     display: grid;
     grid-template-rows: 20px 60px;
@@ -20,8 +19,6 @@
         'close'
         'h1'
         'form'
-        'btn'
-        'policy'
     ;
     background: $bg-color;
     padding: 29px 52px 29px 52px;
@@ -58,12 +55,30 @@
     font-weight: 400;
 }
 
+.h1CompleteModule{
+    @extend .h1Module;
+    max-width: 350px;
+    align-self: start;
+    margin-top: 100px;
+}
+
+.p1Module{
+    grid-area: form;
+    max-width: 226px;
+    margin-top: 165px;
+    align-self: start;
+}
+.p1{
+    font-family: $raleway-Reg;
+    font-size: 14px;
+    color: $text-color;
+    font-weight: 400;
+}
 .formModule{
     grid-area: form;
     margin-top: 32px;
-    width: 197px;
-    padding-left: 15px;
-    padding-right: 15px;
+    width: 227px;
+    
 }
 
 .dir{
@@ -101,7 +116,8 @@
     margin-top: 32px;
 }
 .btn{
-    width: 240px;
+    margin-top: 32px;
+    width: 230px;
     height: 55px;
     border: 1px solid $accent-color;
     border-radius: 53px;
@@ -120,8 +136,9 @@
 }
 
 .policyModule{
-    grid-area: policy;
     display: flex;
+    margin-top: 23px;
+    margin-left: 10px;
 }
 .policy{
     text-align: start;
@@ -131,4 +148,25 @@
     font-size: 10px;
     color: $text-color;
     margin-left: 13px;
+}
+
+.policyError{
+    @extend .policy;
+    color: red;
+}
+
+.checkbox{
+    width: 16px;
+    height: 16px;
+    align-self: center;
+    
+    cursor: pointer;
+}
+
+.error{
+    text-align: start;
+    color: red;
+    font-size: 12px;
+    font-family: $raleway-Reg;
+    font-weight: 400;
 }
