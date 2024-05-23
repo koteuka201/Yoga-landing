@@ -2,7 +2,8 @@
 @import '../../generalStyles/variables.scss';
 
 .footer{
-    
+    display: flex;
+    justify-content: center;
     height: 257px;
     background-color: $accent-color;
     @include tablet{
@@ -124,8 +125,9 @@
     }
     @include mobile{
         width: 102px;
-        justify-self: center;   
+        justify-self: start;   
         align-self: end;
+        margin-left: 10px;
     }
 }
 .agreement{

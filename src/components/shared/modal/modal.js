@@ -47,6 +47,12 @@ export const Modal = ({ isOpen, onClose, direction, time }) => {
                             Наш менеджер свяжется с вами в ближайшее время!
                         </div>
                     </div>
+                    <div
+                        className={styles.flower}
+                        style={{backgroundImage: `url('/assets/flowers/modalFlower.svg')`}}
+                    >
+
+                    </div>
                 </>
             ) : (    
                     <>

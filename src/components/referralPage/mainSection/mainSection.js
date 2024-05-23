@@ -86,6 +86,12 @@ export const MainSection=()=>{
                 </div>
             </>
             }
+            <div
+                className={styles.flower}
+                style={{backgroundImage: `url('/assets/flowers/referralFlower.svg')`}}
+            >
+
+            </div>
         </div>
     )
     

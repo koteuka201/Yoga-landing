@@ -12,6 +12,8 @@ import { Footer } from './components/footer/footer'
 
 export default function App(){
     return(
+        <>
+        
         <main className='wrapConteiner'>
             <Header/>
             <MainPage/>
@@ -22,7 +24,9 @@ export default function App(){
             <ReviewsPage/>
             <FAQPage/>
             <FindUsPage/>
-            <Footer/>
+            
         </main>
+        <Footer/>
+        </>
     )
 }

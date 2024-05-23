@@ -217,3 +217,22 @@
         height: 23px;
     }
 }
+.flower{
+    position: absolute;
+    bottom: -35%;
+    left: 1%;
+    width: 500px;
+    height: 500px;
+    z-index: -1;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 80%;
+    @include tablet{
+        display: none;
+    }
+    @include mobile{
+        display: none;
+        
+    }
+
+}
